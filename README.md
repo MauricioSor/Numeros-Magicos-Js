@@ -1,4 +1,4 @@
-# Trabajo Practico Nº5 - Practicas con Javascript ( Manipulacion DOM y BOM)📚 
+# Numeros Magicos - Practicas con Javascript ( Manipulacion DOM)📚 
 
 ## Own project . Rolling Code's homework to learn about Javascript .
 
