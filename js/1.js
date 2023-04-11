@@ -7,6 +7,8 @@ let botonComenzar = document.getElementById(`comenzar`);
 let botonEnviar = document.getElementById(`enviar`);
 let entradaTexto = document.getElementById(`entrada`);
 let letreros = document.getElementById(`cartel`);
+let eleccion = document.getElementById(`eleccion`);
+let cpuElec = document.getElementById(`cpu`);
 // Manejador de Eventos
 botonComenzar.addEventListener("click",ocultarMostrar);
 botonEnviar.addEventListener("click",enviar);
@@ -22,6 +24,8 @@ let valor = entradaTexto.value;
 let a=cpu();
 let b= parseInt(valor);
 console.log(a);
+eleccion.innerText=`Eleccion: ${a}`;
+cpuElec.innerText=`CPU: ${b}`;
 console.log(b);
 if(a==b){
 letreros.innerText='Ganaste!';
