@@ -3,7 +3,32 @@ body{
     background-size: 500%;
     animation:animacion 10s infinite;
 }
+#TituloJuego{
+    font-family: monospace;
+    font-size: 60px;
+    background: linear-gradient(90deg, blue,red,gray,green,yellow,white,purple);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation:text 5s infinite;
+}
+h1{
+    font-size: 100px;
+    background: linear-gradient(100deg, gold,white,gold);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation:text 2s infinite;
+}
+@keyframes text{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
 
+}
 @keyframes animacion{
     0%{
         background-position: 0% 50%;

@@ -6,6 +6,7 @@ function cpu(){
 let botonComenzar = document.getElementById(`comenzar`);
 let botonEnviar = document.getElementById(`enviar`);
 let entradaTexto = document.getElementById(`entrada`);
+let letreros = document.getElementById(`cartel`);
 // Manejador de Eventos
 botonComenzar.addEventListener("click",ocultarMostrar);
 botonEnviar.addEventListener("click",enviar);
@@ -23,8 +24,10 @@ let b= parseInt(valor);
 console.log(a);
 console.log(b);
 if(a==b){
+letreros.innerText='Ganaste!';
 alert(`Ganaste`);
 }else{
+    letreros.innerText='Perdiste!';
     alert(`Perdiste`);
 }
 }
